@@ -1,0 +1,15 @@
+<ion-view view-title="Pollution Index">
+  <ion-content>
+    <div class="list card">
+		<div class="item item-thumbnail-left">
+			<img ng-src="img/aqi-chart.png" />
+			<h1>{{area}}</h1>
+			<h2>Date: <strong>{{items.time | date: "dd/MM/yyyy 'at' h:mma" }}</strong></h2>
+			<h2>Pollution: <strong>{{items.data[0].value}}</strong></h2>
+			<h2>Pressure: <strong>{{items.data[0].pressure}}</strong></h2>
+			<h2>Precision: <strong>{{items.data[0].precision}}</strong></h2>
+		</div>
+		<img class="img-full" ng-src="img/aqi.png" />
+	</div>
+  </ion-content>
+</ion-view>

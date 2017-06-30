@@ -1,0 +1,47 @@
+<ion-view view-title="Current Weather">
+  <ion-content>
+    <div class="list card">
+      <div class="item item-divider"><h1>Location: {{weather.name}}, {{weather.sys.country}}</h1></div>
+      <div class="item item-thumbnail-left">
+        <img src="{{getIconUrl(weather.weather[0].icon)}}" />
+        <h1>{{weather.weather[0].main}}</h1>
+		<h2>{{weather.weather[0].description}}</h2>
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-thermometer"></i>
+        <h2>Current Temperature: {{weather.main.temp}}&deg;</h2>
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-thermometer"></i>
+        <h2>Today's High: {{weather.main.temp_max}}&deg;</h2>
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-thermometer"></i>
+        <h2>Today's Low: {{weather.main.temp_min}}&deg;</h2>
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-waterdrop"></i>
+        <h2>Humidity: {{weather.main.humidity}}%</h2>
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-shuffle"></i>
+        <h2>Wind: {{weather.wind.speed}}mph, {{getDirection(weather.wind.deg)}}</h2>
+      </div>
+	  <div class="item item-icon-left">
+        <i class="icon ion-eye"></i>
+        <h2>visibility: {{weather.visibility}}</h2>
+      </div>
+	  
+	  <div class="item item-icon-left">
+        <i class="icon ion-clock"></i>
+        <h2>Sunset: {{weather.sys.sunset | date: 'hh:mm a'}}</h2>
+      </div>
+	  
+	  <div class="item item-icon-left">
+        <i class="icon ion-map"></i>
+        <h2>Latitude: {{weather.coord.lon}} | Longitude: {{weather.coord.lat}}</h2>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

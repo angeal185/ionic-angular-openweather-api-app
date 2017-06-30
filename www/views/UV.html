@@ -1,0 +1,14 @@
+<ion-view view-title="UV">
+  <ion-content>
+    <div class="list card">
+		<div class="item item-thumbnail-left">
+			<img ng-src="img/uvi.gif" />
+			<h1>{{area}}</h1>
+			<h2>Lat: <strong>{{items.lat}}</strong> | Lon: <strong>{{items.lon}}</strong></h2>
+			<h2>Date: <strong>{{items.date | date: "MM/dd/yyyy 'at' h:mma" }}</strong></h2>
+			<h2>UV Index: <strong>{{items.value}}</strong></h2>
+		</div>
+		<img class="img-full" ng-src="img/uv_index.png" />
+	</div>
+  </ion-content>
+</ion-view>

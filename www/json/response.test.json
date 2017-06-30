@@ -1,0 +1,42 @@
+{
+    "coord": {
+        "lon": 144.96,
+        "lat": -37.81
+    },
+    "weather": [
+        {
+            "id": 520,
+            "main": "Rain",
+            "description": "light intensity shower rain",
+            "icon": "09d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 54.23,
+        "pressure": 1021,
+        "humidity": 58,
+        "temp_min": 53.6,
+        "temp_max": 55.4
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 14.99,
+        "deg": 260
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1498710600,
+    "sys": {
+        "type": 1,
+        "id": 8201,
+        "message": 0.0032,
+        "country": "AU",
+        "sunrise": 1498685791,
+        "sunset": 1498720250
+    },
+    "id": 2158177,
+    "name": "Melbourne",
+    "cod": 200
+}

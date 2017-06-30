@@ -1,0 +1,15 @@
+<ion-view title="" hide-nav-bar="true" hide-back-button="true">
+  <ion-content>
+    <div class="list card">
+      <div class="item">
+         <h2>{{title}}</h2>
+         <p>{{sub}}</p>
+      </div>
+	  <div ng-repeat="x in menu">
+		  <a ng-href="#/{{x.href}}" class="item item-icon-left balanced">
+			<i class="icon ion-{{x.icon}}"></i> <b>{{x.title}}</b>
+		  </a>
+	  </div>
+    </div>
+  </ion-content>
+</ion-view>
